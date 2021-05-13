@@ -1,0 +1,5 @@
+**.DS_Store
+.envrc
+dist/
+TODO.md
+p2cli

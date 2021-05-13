@@ -1,0 +1,10 @@
+address: {{ address }}
+no_registration: {{ no_registration | default(false, true) | lower }}
+database_path: ""
+secret_key: {{ jwt_secret_key }}
+session:
+  secret: {{ session.secret_key }}
+  access_token_ttl: {{ session.access_token_ttl | default("1440h", true) }}
+  refresh_token_ttl: {{ session.refresh_token_ttl | default("8760h", true) }}
+brokers:{% for broker in brokers %}
+- {{ broker }}{% endfor %}

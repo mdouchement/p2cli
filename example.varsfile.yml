@@ -1,0 +1,11 @@
+---
+address: localhost:5000
+no_registration: true
+jwt_secret_key: verystrongsecret-jwt
+session:
+  secret_key: verystrongsecret-paseto
+  access_token_ttl: 440h
+brokers:
+- localhost:6000
+- localhost:6001
+- localhost:6002
