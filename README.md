@@ -31,7 +31,7 @@ brokers:
 - From a YAML vault file:
 
 ```sh
-$ go run . -v example.varsfile.yml example.yml.j2
+$ p2cli -v example.varsfile.yml example.yml.j2
 address: localhost:5000
 no_registration: true
 database_path: ""
